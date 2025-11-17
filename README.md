@@ -2,7 +2,7 @@
 
 A comprehensive, hands-on Docker tutorial covering core concepts from basics to advanced topics. Each module includes working code examples and detailed CLI command walkthroughs.
 
-## 📚 Lab Structure
+## Lab Structure
 
 ### [01 - Basic FastAPI Application](./01-basic-app)
 **Concepts**: Docker fundamentals, images, containers, basic lifecycle
@@ -94,7 +94,7 @@ A comprehensive, hands-on Docker tutorial covering core concepts from basics to 
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Docker installed ([Get Docker](https://docs.docker.com/get-docker/))
@@ -134,33 +134,33 @@ curl http://localhost:8000
 ### Recommended Order
 Go through labs **01 → 07** sequentially for best learning experience. Each lab builds on concepts from previous ones.
 
-## 🎯 What You'll Learn
+##  What You'll Learn
 
 ### Core Docker Concepts
-- ✅ Images vs Containers
-- ✅ Dockerfile syntax and best practices
-- ✅ Container lifecycle management
-- ✅ Port mapping and networking
-- ✅ Data persistence strategies
-- ✅ Multi-container applications
+- Images vs Containers
+- Dockerfile syntax and best practices
+- Container lifecycle management
+- Port mapping and networking
+- Data persistence strategies
+- Multi-container applications
 
 ### Production Skills
-- ✅ Image optimization techniques
-- ✅ Security hardening (non-root users)
-- ✅ Environment-based configuration
-- ✅ Service orchestration
-- ✅ Health checks and dependencies
-- ✅ Development vs production setups
+- Image optimization techniques
+- Security hardening (non-root users)
+- Environment-based configuration
+- Service orchestration
+- Health checks and dependencies
+- Development vs production setups
 
 ### Practical Workflows
-- ✅ Development with live reload
-- ✅ Database integration
-- ✅ Caching strategies
-- ✅ Debugging containers
-- ✅ Log management
-- ✅ Resource monitoring
+- Development with live reload
+- Database integration
+- Caching strategies
+- Debugging containers
+- Log management
+- Resource monitoring
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python 3.9** - Application runtime
 - **FastAPI** - Modern web framework
@@ -171,7 +171,7 @@ Go through labs **01 → 07** sequentially for best learning experience. Each la
 - **Docker** - Containerization platform
 - **Docker Compose** - Multi-container orchestration
 
-## 📝 Docker Command Quick Reference
+## Docker Command Quick Reference
 
 ### Image Management
 ```bash
