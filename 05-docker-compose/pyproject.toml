@@ -1,0 +1,13 @@
+[project]
+name = "05-docker-compose"
+version = "0.1.0"
+description = "Docker Compose demo"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.121.2",
+    "pydantic>=2.12.4",
+    "uvicorn>=0.38.0",
+    "redis>=5.0.0",
+    "psycopg2-binary>=2.9.9",
+]

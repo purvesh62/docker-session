@@ -1,0 +1,11 @@
+[project]
+name = "02-volumes"
+version = "0.1.0"
+description = "Docker volumes demo"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.121.2",
+    "pydantic>=2.12.4",
+    "uvicorn>=0.38.0",
+]
