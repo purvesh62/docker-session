@@ -1,17 +1,18 @@
-# Single-stage build for comparison
-
-FROM python:3.9-slim
+FROM python:3.14.0-slim
 
 # Install uv
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
 
 WORKDIR /app
 
-# Copy everything
-COPY . /app/
+# Copy project files
+COPY pyproject.toml /app/
 
-# Install dependencies
+# Install dependencies using uv
 RUN uv pip install --system --no-cache -r pyproject.toml
+
+# Copy application code
+COPY app.py /app/
 
 EXPOSE 8000
 

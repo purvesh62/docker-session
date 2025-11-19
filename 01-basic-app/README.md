@@ -179,8 +179,8 @@ docker top my-app
 ## Dockerfile Explained
 
 ```dockerfile
-# Base image - Python 3.9 slim variant (smaller size)
-FROM python:3.9-slim
+# Base image - Python 3.14.0 slim variant (smaller size)
+FROM python:3.14.0-slim
 
 # Install uv - modern Python package manager
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv

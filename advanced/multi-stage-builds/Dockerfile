@@ -1,7 +1,7 @@
 # Multi-stage build for optimized image size
 
 # Stage 1: Builder stage
-FROM python:3.9-slim AS builder
+FROM python:3.14.0-slim AS builder
 
 # Install uv
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
@@ -15,7 +15,7 @@ COPY pyproject.toml /app/
 RUN uv pip install --system --no-cache -r pyproject.toml
 
 # Stage 2: Runtime stage
-FROM python:3.9-slim
+FROM python:3.14.0-slim
 
 # Create non-root user for security
 RUN useradd -m -u 1000 appuser

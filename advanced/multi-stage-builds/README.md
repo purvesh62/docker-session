@@ -125,13 +125,13 @@ docker rmi app-single-stage app-multi-stage
 
 ```dockerfile
 # Stage 1: Builder
-FROM python:3.9-slim AS builder
+FROM python:3.14.0-slim AS builder
 # Install build dependencies
 # Build/compile application
 # Install all dependencies
 
 # Stage 2: Runtime
-FROM python:3.9-slim
+FROM python:3.14.0-slim
 # Copy only necessary artifacts from builder
 COPY --from=builder /path/to/deps /path/to/deps
 # Add application code
@@ -142,14 +142,14 @@ COPY --from=builder /path/to/deps /path/to/deps
 
 ### 1. Testing Stage
 ```dockerfile
-FROM python:3.9-slim AS builder
+FROM python:3.14.0-slim AS builder
 # ... build steps
 
 FROM builder AS test
 COPY tests/ /app/tests/
 RUN pytest
 
-FROM python:3.9-slim AS runtime
+FROM python:3.14.0-slim AS runtime
 COPY --from=builder ...
 ```
 
@@ -195,7 +195,7 @@ Typical size reductions:
 ## Best Practices
 
 1. **Order stages logically**: Build → Test → Runtime
-2. **Use specific base images**: `python:3.9-slim` not `python:latest`
+2. **Use specific base images**: `python:3.14.0-slim` not `python:latest`
 3. **Copy only what's needed**: Don't COPY everything to runtime
 4. **Use .dockerignore**: Exclude unnecessary files
 5. **Run as non-root**: Create and switch to non-root user
