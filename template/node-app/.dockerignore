@@ -1,0 +1,12 @@
+/node_modules
+.DS_Store
+*.log
+.env
+npm-debug.log
+yarn-error.log
+dist
+build
+coverage
+.vscode
+.idea
+*.tgz   
