@@ -1,4 +1,4 @@
-# 03 - Docker Bind Mounts
+# 04 - Docker Bind Mounts
 
 ## Concept
 Bind mounts allow you to mount a file or directory from the host machine into a container. Unlike volumes, bind mounts depend on the host filesystem structure and are perfect for development workflows where you want live code reloading.
